@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 4em 2em;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: hsl(225, 100%, 94%);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(pattern-background-mobile.svg);
+
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.intro img {
+    width: 100%;
+}
+
+.text {
+    text-align: center;
+    padding: 1em 2em;
+}
+
+h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+p {
+    line-height: 1.5;
+    color: hsl(224, 23%, 55%);
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.plan {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 1em;
+    width: 95%;
+    margin: 1.5em auto;
+}
+
+.annual {
+    font-size: .9rem;
+    font-weight: 900;
+    text-wrap: nowrap;
+    margin: 0;
+    color: hsl(223, 47%, 23%);
+
+}
+
+.plan span {
+    color: hsl(224, 23%, 55%);
+    display: inline-block;
+    margin: .3em;
+}
+
+.plan img {
+    display: block;
+    width: 3.5rem;
+}
+
+.plan a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.payment {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 10px;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding: 1em 0;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(81, 51, 255, 0.5);
+}
+
+.cancel {
+    text-decoration: none;
+    display: inline-block;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 2em 0;
+}
+
+
+.plan a:hover {
+    text-decoration: none;
+    color: hsl(284, 62%, 55%);
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.payment:hover {
+    background-color: hsl(284, 62%, 55%);
+}
+
+
+@media (min-width:600px) {
+    body {
+        background-image: url("pattern-background-desktop.svg");
+    }
+}
